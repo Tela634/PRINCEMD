@@ -124,7 +124,7 @@ export async function handler(chatUpdate) {
             if (chat) {
 if (!("antiDelete" in chat)) chat.antiDelete = true
 if (!("antdeletelinks" in chat)) chat.antdeletelinks = true 
-if (!("antiSticker" in chat)) chat.antiSticker = false
+if (!("antiSticker" in chat)) chat.antiSticker = true
 if (!("antiToxic" in chat)) chat.antiToxic = false
 if (!('antiver' in chat)) chat.antiver = false 
 if (!('anticmds' in chat)) chat.anticmds = false
@@ -155,7 +155,7 @@ if (!("viewOnce" in chat)) chat.viewOnce = false
 if (!("viewStory" in chat)) chat.viewStory = false
 if (!('antiBotClone' in chat)) chat.antiBotClone = false
 if (!("welcome" in chat)) chat.welcome = false
-if (!("chatbot" in chat)) chat.chatbot = false
+if (!("chatbot" in chat)) chat.chatbot = true
 if (!("princechat" in chat)) chat.princechat = false
 if (!isNumber(chat.expired)) chat.expired = 0
 		   
@@ -198,7 +198,7 @@ viewOnce: false,
 viewStory: false,
 welcome: false,
 princechat: false,                    
-chatbot: false
+chatbot: true
 			
                 }
           
